@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 
 st.title("Luis Project Temp. Website")
 st.header("Program Description")
