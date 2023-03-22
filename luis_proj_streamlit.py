@@ -26,9 +26,9 @@ if file != None:
     #st.write(df)
 
     for index, row in df.iterrows():
-        group = int(row['c1'])
-        day = int(row['c2'])
-        giltCount = int(row['c3'])
+        group = int(row['group'])
+        day = int(row['day'])
+        giltCount = int(row['gilts'])
 
         if emptySlots - giltCount < 0: #If there's more gilts than empty slots        
             #outputfile.write(str(emptySlots) + "\n")
