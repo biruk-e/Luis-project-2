@@ -62,6 +62,7 @@ if file != None:
                     data["gilt count"].append(20)
                     remainingGilts = 0
                     emptySlots = 20
+                    currentRoom += 1
                 elif emptySlots - remainingGilts > 0 and remainingGilts != 0: #If there's more empty slots than remaining gilts
                     st.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(remainingGilts) + "\n")
                     data["group"].append(group)
