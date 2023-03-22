@@ -85,7 +85,7 @@ if file != None:
 
     #st.write(data)
     df2 = pd.DataFrame(data= data)
-    st.write(df)
+    st.write(df2)
 
     def convert_df(df):
         return df.to_csv(index=False).encode('utf-8')
