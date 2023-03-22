@@ -92,6 +92,7 @@ if file != None:
 
             remainingGilts = 0
             emptySlots = 20
+            currentRoom += 1
 
     #st.write(data)
     df2 = pd.DataFrame(data= data)
