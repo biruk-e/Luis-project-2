@@ -75,11 +75,21 @@ if file != None:
         
         elif emptySlots - giltCount > 0: #If there's less gilts than empty slots
             st.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(giltCount) + "\n") 
+            data["group"].append(group)
+            data["day"].append(day)
+            data["room number"].append(currentRoom)
+            data["gilt count"].append(giltCount)
+
             remainingGilts = 0
             emptySlots -= giltCount #Empty slots are reduced by the amount of gilts that were put in the room
         
         elif emptySlots - giltCount == 0: #If there's an equal amount of gilts and empty slots
             st.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(giltCount) + "\n") 
+            data["group"].append(group)
+            data["day"].append(day)
+            data["room number"].append(currentRoom)
+            data["gilt count"].append(giltCount)
+
             remainingGilts = 0
             emptySlots = 20
 
