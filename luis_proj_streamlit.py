@@ -7,8 +7,10 @@ st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 st.header("Instructions")
 st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
 
+
+
 # Constants
-roomsize = 20
+roomsize = st.slider("Set room capacity by sliding to preferred value", min_value = 1, max_value= 100, step=1)
 startingRoomnumber = 13
 emptySlots = 20
 currentRoom = 13
@@ -42,7 +44,7 @@ if file != None:
             emptySlots = 0 #Room is full so empty slots goes down to 0
             while remainingGilts > 0:
                 currentRoom += 1 #Room number increases by 1
-                emptySlots = 20 #Empty slots resets to 20 because we have a new room
+                emptySlots = roomsize #Empty slots resets to 20 because we have a new room
                 #Write out Group, Day, Room, and Gilt Count in output file
                 #outputfile.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(remainingGilts) + "\n")
                 if emptySlots - remainingGilts < 0 and emptySlots != 0:
@@ -53,15 +55,15 @@ if file != None:
                     data["gilt count"].append(emptySlots)
 
                     remainingGilts = abs(emptySlots - remainingGilts)
-                    emptySlots = 20
+                    emptySlots = roomsize
                 elif emptySlots - remainingGilts == 0: #If there's an equal amount of empty slots and remaining gilts
                     #st.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(20) + "\n") 
                     data["group"].append(group)
                     data["day"].append(day)
                     data["room number"].append(currentRoom)
-                    data["gilt count"].append(20)
+                    data["gilt count"].append(roomsize)
                     remainingGilts = 0
-                    emptySlots = 20
+                    emptySlots = roomsize
                     currentRoom += 1
                 elif emptySlots - remainingGilts > 0 and remainingGilts != 0: #If there's more empty slots than remaining gilts
                     #st.write("Group: " + str(group) + ", Day: " + str(day) + ", Room: " + str(currentRoom) + ", Gilt Count: " + str(remainingGilts) + "\n")
@@ -92,7 +94,7 @@ if file != None:
             data["gilt count"].append(giltCount)
 
             remainingGilts = 0
-            emptySlots = 20
+            emptySlots = roomsize
             currentRoom += 1
 
     #st.write(data)
