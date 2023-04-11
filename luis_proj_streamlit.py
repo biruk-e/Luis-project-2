@@ -10,10 +10,10 @@ st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 
 
 # Constants
-roomsize = st.slider("Set room capacity by sliding to preferred value", min_value = 1, max_value= 100, step=1)
+roomsize = st.slider("Set room capacity", min_value = 1, max_value= 100, step=1)
 startingRoomnumber = 13
 emptySlots = roomsize
-currentRoom = 13
+currentRoom = st.slider("Set starting room number", min_value = 1, max_value= 100, step=1)
 currentDay = 2
 daysIndex = 2
 
