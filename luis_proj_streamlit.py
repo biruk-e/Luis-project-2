@@ -1,11 +1,17 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Project Title")
-st.header("Program Description")
-st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
-st.header("Instructions")
-st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+st.title("FlowProjections")
+#st.header("Program Description")
+#st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+st.write("Hi! Welcome to FlowProjections!")
+st.write("Thank you for choosing us!")
+st.write("We are here to simplify your tasks by automatically calculating your flow projections. Just create a csv file that has 3 columns containing your group numbers, days, and gilts in each group (make sure that the first line of the file says “group, day, gilts” as this indicates to our program which columns hold what information). Here’s an example of what it should look like:")
+st.write("[insert image here]")
+st.write("Once you’re done, upload your file and our program does all the work for you, letting you focus on what really matters!")
+st.write("We are still in the development stage and are starting to test and troubleshoot. In the future we expect to add more functionalities and make our program more user-friendly. We are excited to provide this service and would appreciate any input in order to improve our application. If you have any issues with the application please email us with your questions or concerns at [insert email].")
+#st.header("Instructions")
+#st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
 
 
 
